@@ -27,4 +27,10 @@ public class MusicControlsNotificationKiller extends Service {
 		mNM = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 		mNM.cancel(NOTIFICATION_ID);
 	}
+		
+	@Override
+	public void onDestroy() {
+		mNM = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+		mNM.cancel(NOTIFICATION_ID);
+	}
 }
